@@ -10,6 +10,7 @@ import YubiKit
 import OSLog
 
 @testable import FullStackTests
+@testable import YubiKit
 
 final class PIVFullStackTests: XCTestCase {
     

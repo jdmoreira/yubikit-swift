@@ -17,6 +17,7 @@ import YubiKit
 import CryptoTokenKit
 
 @testable import FullStackTests
+@testable import YubiKit
 
 class ConnectionFullStackTests: XCTestCase {
 
