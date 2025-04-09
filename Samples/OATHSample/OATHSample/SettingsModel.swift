@@ -15,14 +15,7 @@
 import Foundation
 import YubiKit
 
-protocol SettingsModelProtocol: ObservableObject {
-    var keyVersion: String? { get }
-    var connection: String? { get }
-    var error: Error? { get }
-    func getKeyVersion()
-}
-
-class SettingsModel: SettingsModelProtocol {
+class SettingsModel: ObservableObject {
     
     @Published private(set) var keyVersion: String?
     @Published private(set) var connection: String?

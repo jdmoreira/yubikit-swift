@@ -15,16 +15,7 @@
 import Foundation
 import YubiKit
 
-protocol OATHListModelProtocol: ObservableObject {
-    var accounts: [Account] { get }
-    var source: String { get }
-    var error: Error? { get }
-    func stopWiredConnection()
-    func startWiredConnection()
-    func calculateNFCCodes()
-}
-
-class OATHListModel: OATHListModelProtocol {
+class OATHListModel: ObservableObject {
     @Published private(set) var accounts = [Account]()
     @Published private(set) var source = "no connection"
     @Published var error: Error?
